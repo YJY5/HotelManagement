@@ -26,6 +26,7 @@ public class JMockTest {
 	public void testOut() {
 		assertEquals("701退房成功！",oh.out(701));
 		System.out.println("jmock测试");
+		System.out.println(0/1);
 	}
 	
 }
