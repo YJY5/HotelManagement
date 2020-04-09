@@ -1,0 +1,7 @@
+package test;
+
+public interface IData {
+	public void iniRooms();
+	public String in_out_room(int roomNo,String name);
+	public String getStation(int roomNo);
+}
