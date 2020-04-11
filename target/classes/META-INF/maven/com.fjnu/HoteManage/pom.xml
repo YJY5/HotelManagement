@@ -6,8 +6,28 @@
 	<artifactId>HoteManage</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
-	<dependencies>
 
+	<plugin>
+		<groupId>org.apache.maven.plugins</groupId>
+		<artifactId>maven-compiler-plugin</artifactId>
+		<configuration>
+			<source>1.8</source>
+			<target>1.8</target>
+		</configuration>
+	</plugin>
+	<plugin>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-maven-plugin</artifactId>
+		<executions>
+			<execution>
+				<goals>
+					<goal>repackage</goal>
+				</goals>
+			</execution>
+		</executions>
+	</plugin>
+
+	<dependencies>
 		<!-- https://mvnrepository.com/artifact/org.jmock/jmock-junit4 -->
 		<dependency>
 			<groupId>org.jmock</groupId>
